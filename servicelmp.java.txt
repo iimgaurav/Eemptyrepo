@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Scanner object for user input
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user for their name
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+
+        // Prompt the user for two numbers
+        System.out.print("Enter the first number: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Enter the second number: ");
+        int num2 = scanner.nextInt();
+
+        // Perform basic arithmetic operations
+        int sum = num1 + num2;
+        int difference = num1 - num2;
+        int product = num1 * num2;
+        double quotient = (double) num1 / num2;
+
+        // Display the results
+        System.out.println("\nHello, " + name + "!");
+        System.out.println("The sum of the numbers is: " + sum);
+        System.out.println("The difference of the numbers is: " + difference);
+        System.out.println("The product of the numbers is: " + product);
+        System.out.println("The quotient of the numbers is: " + quotient);
+
+        // Close the scanner
+        scanner.close();
+    }
+}
